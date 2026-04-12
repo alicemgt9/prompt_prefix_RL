@@ -2,6 +2,6 @@
 
 
 
-
+# 使用前请先安装rl-prompt [rl-prompt](https://github.com/mingkaid/rl-prompt)
 
 
