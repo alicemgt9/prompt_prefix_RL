@@ -1,0 +1,31 @@
+# Few-Shot Classification Config
+defaults:
+ - base_ner
+ - _self_
+# Data
+num_shots: 8
+base_path: "./data"
+dataset: "conll_org_m"
+dataset_seed: 0
+# Reward
+task_lm: "../../../llama/llama-2-7b-chat-hf"
+Llama_model_version: "2"
+Llama_model_size: "7b"
+
+# Single Prompt Model
+prompt_length: 16
+prompt_train_batch_size: 8
+prompt_infer_batch_size: 1
+# SQL Module
+reward_shaping_old_min: 0
+reward_shaping_old_max: 1
+reward_shaping_new_min: 0
+reward_shaping_new_max: 5
+top_k: 256
+# Trainer
+max_train_steps: 500
+train_shuffle: false
+eval_steps: 10
+save_steps: 5
+learning_rate: 5e-5
+random_seed: 42

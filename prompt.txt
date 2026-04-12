@@ -1,0 +1,15 @@
+{prompt}.Please identify the diseases in the following English sentences without showing the reasoning process.The sentences may also contain disease abbreviations, and i will give you some examples,
+example1: 'Here we present four novel PAX6 missense mutations , two in association with atypical phenotypes ectopia pupillae ( displaced pupils ) and congenital nystagmus ( searching gaze ) , and two in association with more recognizable aniridia phenotypes .',Output:'ectopia pupillae',
+example2: 'We conclude that paternal transmission of congenital DM is rare and preferentially occurs with onset of DM past 30 years in the father . .',Output:'congenital DM',
+example3: 'Very - long - chain acyl - coenzyme A dehydrogenase ( VLCAD ) deficiency is a disorder of fatty acid beta oxidation that reportedly has high rates of morbidity and mortality .',Output:'Very - long - chain acyl - coenzyme A dehydrogenase ( VLCAD ) deficiency'
+example4: 'These results indicate that Smad4 is initially required for the differentiation of the visceral endoderm and that the gastrulation defect in the epiblast is secondary and non - cell autonomous .',Output:'gastrulation defect',
+please help me to find the disease in sentence: {sentence} the disease is:<output>"
+
+
+
+SMM4H:{prompt}. Given entity label set:ADE,which is called dverse drug events.Based on the given entity label set.I will give you some examples,Please identify the ADEs in the following English sentences without showing the reasoning process."
+        template += "example1: 'Here we present four novel PAX6 missense mutations , two in association with atypical phenotypes ectopia pupillae ( displaced pupils ) and congenital nystagmus ( searching gaze ) , and two in association with more recognizable aniridia phenotypes .',Output:'ectopia pupillae',\n"
+        template += "example2: 'We conclude that paternal transmission of congenital DM is rare and preferentially occurs with onset of DM past 30 years in the father . .',Output:'congenital DM',\n"
+        template += "example3: 'Very - long - chain acyl - coenzyme A dehydrogenase ( VLCAD ) deficiency is a disorder of fatty acid beta oxidation that reportedly has high rates of morbidity and mortality .',Output:'Very - long - chain acyl - coenzyme A dehydrogenase ( VLCAD ) deficiency'\n"
+        template += "example4: 'These results indicate that Smad4 is initially required for the differentiation of the visceral endoderm and that the gastrulation defect in the epiblast is secondary and non - cell autonomous .',Output:'gastrulation defect',\n"
+        template += "please help me to find the ADE in sentence: '{sentence_1}.' the ADE is:<output>"
