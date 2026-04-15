@@ -37,7 +37,6 @@ class PromptedNerReward(BaseReward):
         self.Llama_model_size = Llama_model_size
         self.dataset = dataset
         #这个dataset可以直接从这里修改，一次把所有的全部变成token
-        hf_token = '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'
         self.unemb = load_unemb_only(self.Llama_model_size,self.Llama_model_version)
         self.llama = LlamaHelper(dir=task_lm, load_in_8bit=True, hf_token=hf_token)
         self.tokenizer = self.llama.tokenizer
